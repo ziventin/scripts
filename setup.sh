@@ -46,3 +46,6 @@ cd i3-gaps-git
 makepkg -si
 cd ..
 rm -rf i3-gaps-git
+
+#reboot the system to apply effects
+reboot
