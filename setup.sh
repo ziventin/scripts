@@ -39,3 +39,10 @@ sudo pacman -S firefox rxvt-unicode feh mesa xorg-server lightdm lightdm-gtk-gre
 
 #enable lightdm
 systemctl enable lighdm.service
+
+#install i3-gaps through the AUR
+git clone https://aut.archlinux.org/i3-gaps-git.git
+cd i3-gaps-git
+makepkg -si
+cd ..
+rm -rf i3-gaps-git
