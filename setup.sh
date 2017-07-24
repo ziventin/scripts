@@ -48,7 +48,7 @@ echo "DONE"
 
 #install programs
 echo "installing programs"
-sudo pacman -S firefox rxvt-unicode feh mesa xorg screenfetch base_devel vim
+sudo pacman -S firefox rxvt-unicode feh mesa xorg screenfetch base-devel vim
 echo "DONE"
 
 #install i3-gaps through AUR
