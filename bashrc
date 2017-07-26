@@ -10,5 +10,8 @@ alias vii3="vi3"
 alias mount="sudo mount"
 alias umount="sudo umount"
 alias unmount="umount"
+alias sysd="systemctl"
+alias re="sudo !!"
+alias x="startx"
 rm -rf Desktop
 screenfetch

@@ -21,7 +21,7 @@ echo "DONE"
 
 #put xinitrc into the correct location
 echo "moving .xinitrc"
-ln -sf ~/scripts/xinitrc ~/.xinitrc
+ln -sf ~/scritps/xinitrc ~/.xinitrc
 echo "DONE"
 
 #put Xresources into the correct location
@@ -33,7 +33,7 @@ echo "DONE"
 mkdir ~/.config
 mkdir ~/.config/i3
 echo "moving i3 config"
-ln -sf ~/scripts/i3_config ~/.config/i3/config
+ln -sf ~/scritps/i3_config ~/.config/i3/config
 echo "DONE"
 
 #put vimrc into the correct location
@@ -43,18 +43,18 @@ echo "DONE"
 
 #clone my firefox start page
 echo "cloning firefox startpage"
-git clone https://www.github.com/ziventin/startpage
+git clone https://www.github.com/ziventin/startpage startpage
 echo "DONE"
 
 #install programs
 echo "installing programs"
-sudo pacman -S firefox rxvt-unicode feh mesa xorg screenfetch base-devel vim
+sudo pacman -S firefox rxvt-unicode feh mesa xorg-server screenfetch base-devel vim i3lock i3blocks i3status xorg-init
 echo "DONE"
 
 #install i3-gaps through AUR
 echo "installing i3-gaps"
 echo "cloning"
-git clone https://aur.archlinux.org/i3-gaps-git.git ie-gaps
+git clone https://aur.archlinux.org/i3-gaps-git.git i3-gaps
 cd i3-gaps
 echo "instaling"
 makepkg -si
