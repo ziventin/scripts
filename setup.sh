@@ -48,7 +48,7 @@ echo "DONE"
 
 #install programs
 echo "installing programs"
-sudo pacman -S firefox rxvt-unicode feh mesa xorg-server screenfetch base-devel vim i3lock i3blocks i3status xorg-init
+sudo pacman -S firefox rxvt-unicode feh mesa xorg-server screenfetch base-devel vim i3blocks i3status xorg-xinit
 echo "DONE"
 
 #install i3-gaps through AUR
