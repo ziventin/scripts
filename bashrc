@@ -1,5 +1,5 @@
 alias clr="clear"
-alias clear="clear && screenfetch"
+alias clear="screenfetch > .sf;clear;cat .sf"
 alias python="python2"
 alias shutdown="shutdown now"
 alias vi="vim"
@@ -13,5 +13,6 @@ alias unmount="umount"
 alias sysd="systemctl"
 alias re="sudo !!"
 alias x="startx"
+alias vilock="vim ~/scripts/lock.sh"
 rm -rf Desktop
 screenfetch
