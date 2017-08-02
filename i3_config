@@ -55,6 +55,9 @@ exec ~/scripts/i3_auto.sh
 # lock screen
 bindsym $mod+d exec ~/scripts/lock.sh
 
+# open sound mixer
+bindsym $mod+v exec alsamixer
+
 set $work1 "1"
 set $work2 "2"
 set $work3 "3"
