@@ -14,10 +14,9 @@ gaps outer 10
 #auto start
 
 exec_always $si feh --bg-scale ~/.background
-workspace $ws1
-append_layout ~/scripts/i3_layouts/work1.json
-workspace $ws2
-append_layout ~/scripts/i3_layouts/work2.json
+
+exec $si "i3-msg '$ws1; append_layout ~/scripts/i3_layouts/work1.json'"
+exec $si "i3-msg '$ws2; append_layout ~/scripts/i3_layouts/work2.json'"
 
 exec $si $terminal
 exec $si $terminal
@@ -26,7 +25,7 @@ exec $si $browser
 #basic binds
 
 bindsym $mod+Return 		exec $terminal
-bindsym $mod+Shift+Return
+bindsym $mod+Shift+Return	nop
 
 bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
@@ -34,107 +33,107 @@ bindsym $mod+space		focus mode_toggle
 bindsym $mod+Escape		workspace prev
 bindsym $mod+Shift+Escape 	exec i3-msg exit
 
-bindsym $mod+BackSpace
-bindsym $mod+Shift+BackSpace
+bindsym $mod+BackSpace		nop
+bindsym $mod+Shift+BackSpace	nop
 
-bindsym $mod+grave
-#bindsym $mod+asciitilde
-bindsym $mod+Shift+Delete
+bindsym $mod+grave		nop
+bindsym $mod+asciitilde		nop
+bindsym $mod+Shift+Delete	nop
 
 #all binds
 
 bindsym $mod+q			kill
 bindsym $mod+Shift+q		kill
 
-bindsym $mod+w
-bindsym $mod+Shift+w
+bindsym $mod+w			nop
+bindsym $mod+Shift+w		nop
 
-bindsym $mod+e			
-#bindsym $mod+Shift+e
+bindsym $mod+e			nop
+bindsym $mod+Shift+e		nop
 
-bindsym $mod+r
+bindsym $mod+r			nop
 bindsym $mod+Shift+r		restart
 
-bindsym $mod+t
-bindsym $mod+Shift+t
+bindsym $mod+t			nop
+bindsym $mod+Shift+t		nop
 
-bindsym $mod+y
-bindsym $mod+Shift+y
+bindsym $mod+y			nop
+bindsym $mod+Shift+y		nop
 
-bindsym $mod+u
-bindsym $mod+Shift+u
+bindsym $mod+u			nop
+bindsym $mod+Shift+u		nop
 
-bindsym $mod+i 
-bindsym $mod+Shift+i
+bindsym $mod+i 			nop
+bindsym $mod+Shift+i		nop
 
-bindsym $mod+o
-bindsym $mod+Shift+o
+bindsym $mod+o			nop
+bindsym $mod+Shift+o		nop
 
-bindsym $mod+p
-bindsym $mod+Shift+p
+bindsym $mod+p			nop
+bindsym $mod+Shift+p		nop
 
-bindsym $mod+a
-bindsym $mod+Shift+a
+bindsym $mod+a			nop
+bindsym $mod+Shift+a		nop
 
-bindsym $mod+s
-bindsym $mod+Shift+s
+bindsym $mod+s			nop
+bindsym $mod+Shift+s		nop
 
 bindsym $mod+d			exec $si ~/scripts/lock.sh
-bindsym $mod+Shift+d
+bindsym $mod+Shift+d		nop
 
 bindsym $mod+f			exec $si $browser
-#bindsym $mod+Shift+f	fullscreen toggle
+bindsym $mod+Shift+f	fullscreen toggle
 
-bindsym $mod+g
-bindsym $mod+Shift+g
+bindsym $mod+g			nop
+bindsym $mod+Shift+g		nop
 
 bindsym $mod+h			focus left
-bindsym $mod+Shift+h
+bindsym $mod+Shift+h		nop
 
 bindsym $mod+j			focus down
-bindsym $mod+Shift+j
+bindsym $mod+Shift+j		nop
 
 bindsym $mod+k			focus up
-bindsym $mod+Shift+k
+bindsym $mod+Shift+k		nop
 
 bindsym $mod+l			focus right
-bindsym $mod+Shift+l
+bindsym $mod+Shift+l		nop
 
-bindsym $mod+z
-bindsym $mod+Shift+z
+bindsym $mod+z			nop
+bindsym $mod+Shift+z		nop
 
-bindsym $mod+x
-bindsym $mod+Shift+x
+bindsym $mod+x			nop
+bindsym $mod+Shift+x		nop
 
-bindsym $mod+c
-#bindsym $mod+Shift+c
+bindsym $mod+c			nop
+bindsym $mod+Shift+c		nop
 
 bindsym $mod+v			exec $si alsamixer
-#bindsym $mod+Shift+v
+bindsym $mod+Shift+v		nop
 
-bindsym $mod+b
-bindsym $mod+Shift+b
+bindsym $mod+b			nop
+bindsym $mod+Shift+b		nop
 
-bindsym $mod+n
-bindsym $mod+Shift+n
+bindsym $mod+n			nop
+bindsym $mod+Shift+n		nop
 
-bindsym $mod+m
-bindsym $mod+Shift+m
+bindsym $mod+m			nop
+bindsym $mod+Shift+m		nop
 
 bindsym F11		fullscreen toggle
 
 #workspaces
 
-set $ws "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
