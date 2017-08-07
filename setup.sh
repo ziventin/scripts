@@ -61,7 +61,8 @@ $ins rxvt-unicode
 $ins feh
 $ins mesa
 $ins xorg
-$ins screenfetch
+$ins figlet
+$ins lolcat
 $ins base-devel
 $ins vim
 $ins i3blocks

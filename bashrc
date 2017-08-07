@@ -1,5 +1,5 @@
 alias clr="clear"
-alias clear="screenfetch > .sf;clear;cat .sf"
+alias clear="clear; motd"
 alias python="python2"
 alias shutdown="shutdown now"
 alias vi="vim"
@@ -14,5 +14,8 @@ alias sysd="systemctl"
 alias re="sudo !!"
 alias x="startx"
 alias vilock="vim ~/scripts/lock.sh"
+alias motd="~/scripts/motd.sh"
+alias visetup="vim ~/scripts/setup.sh"
+alias vimotd="vim ~/scripts/motd.sh"
 rm -rf Desktop
-screenfetch
+~/scripts/motd.sh
