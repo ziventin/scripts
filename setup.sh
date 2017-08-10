@@ -69,6 +69,7 @@ $ins i3blocks
 $ins i3status
 $ins i3lock
 $ins pulseaudio
+$ins ffmpeg
 echo "DONE"
 
 #install i3-gaps through AUR

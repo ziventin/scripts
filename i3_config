@@ -18,6 +18,7 @@ exec_always $si feh --bg-scale ~/.background
 exec $si "i3-msg '$ws1; append_layout ~/scripts/i3_layouts/work1.json'"
 exec $si "i3-msg '$ws2; append_layout ~/scripts/i3_layouts/work2.json'"
 
+xrdb ~/scripts/Xresources
 exec $si $terminal
 exec $si $terminal
 exec $si $browser
